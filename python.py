@@ -13,4 +13,4 @@ db = client.bpdatabase
 
 bpdata = db.bpdata
 
-bpdata.insert_one(DATAS HERE)
+bpdata.insert_one()

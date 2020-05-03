@@ -16,5 +16,4 @@ function data() {
     var bpdata = new XMLHttpRequest();
     bpdata.open("POST", "python.py", true);
     bpdata.send(infoJSON);
-    alert("struggling");
 }
