@@ -1,0 +1,43 @@
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    text-align: center;
+
+}
+
+h2 {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+div.headinvite {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+div.filling {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 30rem;
+}
+
+label {
+    column-count: 1;
+    display: block;
+    flex-direction: column;
+    padding-left: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+input {
+    display: block;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+textarea {
+    width: 50%;
+    height: 3rem;
+}
