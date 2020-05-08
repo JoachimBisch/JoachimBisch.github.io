@@ -12,5 +12,11 @@ function data() {
     person.phone = document.getElementsByTagName("input")[2].value;
     person.mail = document.getElementsByTagName("input")[3].value;
     person.precision = document.getElementsByTagName("textarea")[0].value;
-    var infoJSON = JSON.stringify(person);
+    fetch('/hello', {method: 'POST', body: JSON.stringify(person)
+        }).then(function (response) {
+        return response.text();
+        }).then(function (text) {
+        console.log('POST response: ');
+        console.log(text);
+    });
 }
