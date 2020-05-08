@@ -6,6 +6,9 @@ h1 {
 h2 {
     font-family: 'Merriweather Sans', sans-serif;
 }
+/*
+
+This class is now replaced by jumbotron from BS4
 
 div.headinvite {
     padding-left: 0;
@@ -13,7 +16,7 @@ div.headinvite {
     padding-bottom: 4rem;
     padding-top: 4rem;
 }
-
+*/
 div.filling {
     padding-left: 0;
     padding-right: 0;
@@ -33,7 +36,7 @@ label {
 input {
     display: block;
     flex-direction: column;
-    margin: 1rem;
+    margin: 100px;
 }
 
 textarea {

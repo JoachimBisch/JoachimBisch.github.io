@@ -13,7 +13,4 @@ function data() {
     person.mail = document.getElementsByTagName("input")[3].value;
     person.precision = document.getElementsByTagName("textarea")[0].value;
     var infoJSON = JSON.stringify(person);
-    var bpdata = new XMLHttpRequest();
-    bpdata.open("POST", "python.py", true);
-    bpdata.send(infoJSON);
 }
