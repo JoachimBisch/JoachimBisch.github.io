@@ -13,8 +13,7 @@ function data() {
     person.mail = document.getElementsByTagName("input")[3].value;
     person.precision = document.getElementsByTagName("textarea")[0].value;
     var infoJSON = JSON.stringify(person)
-    $.ajax({
-        type: "POST",
-        url: "~/pythoncode.py"
-      });
+    var xhttp = new XMLHttpRequest();
+    xhttp.open('post', infoJSON, true);
+    xhttp.send;
 }
