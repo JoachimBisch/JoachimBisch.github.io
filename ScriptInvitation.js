@@ -14,5 +14,6 @@ function data() {
     person.precision = document.getElementsByTagName("textarea")[0].value;
     var xhttp = new XMLHttpRequest();
     var infoJSON = JSON.stringify(person);
-    send(person)
+    xhttp.open("POST", "python.py", true);
+    xhttp.send(person);
 }
