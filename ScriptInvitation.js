@@ -12,8 +12,25 @@ function data() {
     person.phone = document.getElementsByTagName("input")[2].value;
     person.mail = document.getElementsByTagName("input")[3].value;
     person.precision = document.getElementsByTagName("textarea")[0].value;
-    var infoJSON = JSON.stringify(person)
-    var xhttp = new XMLHttpRequest();
-    xhttp.open('post', infoJSON, true);
-    xhttp.send;
+    //var infoJSON = JSON.stringify(person);
 }
+
+
+function on_request_success(response) {
+    console.debug('response', response);
+} 
+
+function on_request_error(r, text_status, error_thrown) {
+    console.debug('error', text_status + ", " + error_thrown + ":\n" + r.responseText);
+}
+
+jQuery.ajax({
+    url: 'https://joachimbisch.github.io/python.py',
+    type: 'POST',
+    cache: false,
+    data: JSON.stringify(person),
+    contentType: 'application/json',
+    processData: false,
+    success: on_request_success,
+    error: on_request_error
+});
